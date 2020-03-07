@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>JS + CSS Clock</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,7 +17,7 @@
         <div class="hand second-hand"></div>
       </div>
     </div>
-
+    <footer><a href="https://github.com/gilbertorascon/JS_CSS_Clock"><i class="fab fa-github"></i></a></footer>
 
   <style>
     html {
@@ -42,6 +43,7 @@
       color: #fff;
       margin: 0 0 10px 0;
       padding: 10px 0;
+      font-size: 32px;
     }
 
     .digital {
@@ -86,6 +88,22 @@
       transform: rotate(90deg);
       transition: all 0.05s;
       transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    }
+
+    footer {
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      padding: 10px;
+    }
+
+    footer .fab {
+      font-size: 40px;
+      color: #fff;
+    }
+
+    footer .fab:hover {
+      color: #F03A47;
     }
 
     @media only screen and (max-width: 768px) {
